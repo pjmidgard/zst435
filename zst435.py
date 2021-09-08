@@ -1155,7 +1155,7 @@ class compression:
                                                 
                                 e4=sda2[e2:e3]
                                 
-                                for i in range(1, lenf5):
+                                for i in range(1, 200):
                                 
                                     if e4=="1" and e3== e3%2+(i%10):
                                             sda3=sda3+"0"
@@ -1187,6 +1187,8 @@ class compression:
                                         sda3=sda3+"0"
                                         e4="1"
                                         e4=""
+                                    if i==200:
+                                        i=1
 	                                                  
                                 e2=e2+1
                                 e3=e3+1
@@ -1408,7 +1410,7 @@ class compression:
                                 
                                 block=block+1
                            
-                                for i in range(1, lenf5):
+                                for i in range(1, 200):
                                 
                                     if e4=="1" and e3== e3%2+(i%10):
                                             sda3=sda3+"0"
@@ -1440,6 +1442,8 @@ class compression:
                                         sda3=sda3+"0"
                                         e4="1"
                                         e4=""
+                                    if i==200:
+                                        i=1
 	                                         
                                     
                                 e2=e2+1
