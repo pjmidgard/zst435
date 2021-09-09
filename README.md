@@ -2,7 +2,7 @@
 
 https://youtu.be/Ne82lgXQPFY
 
-Speed: Area 100B-1KB
+Speed: Ultra 100B-1KB
 
 Instruction:
 1. Need python 
