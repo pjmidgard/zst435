@@ -1987,9 +1987,9 @@ class compression:
                                     if Portal==7:
                                         jl= b'\x89\x50\x4e\x47'+jl
                                     if Portal==8:
-                                    	                    jl=b'\x00\x00\x00\x18\x66\x74\x79\x70\x6d\x70\x34'+jl
+                                    	jl=b'\x00\x00\x00\x18\x66\x74\x79\x70\x6d\x70\x34'+jl
                                     if Portal==9:
-                                    	                    																		jl=b'\xff\xd8\xff'+jl
+                                	jl=b'\xff\xd8\xff'+jl
                                     qqqwz=qqqwz+1
                                     szxzzza=""
                                     szxzs=""
