@@ -36,7 +36,7 @@ Jurijus Pacalovas written program.
 
 4.35 v. zst
 
-0%-99.9949% c.
+MAX: 9.9949% c.
 
 Cryptography
 
