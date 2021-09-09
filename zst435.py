@@ -1155,40 +1155,27 @@ class compression:
                                                 
                                 e4=sda2[e2:e3]
                                 
-                                for i in range(1, 400):
                                 
-                                    if e4=="1" and e3== e3%2+(i+0.1):
-                                            sda3=sda3+"0"
-                                            e4="0"
-                                            e4=""
+                                if e4=="1" and e3== e3%3:
+                                	sda3=sda3+"0"
+                                	e4="0"
+                                	e4=""
+                                    
+                                if e4=="0" and e3== e3%2:
+                                    sda3=sda3+"1"
+                                    e4="1"
+                                    e4=""
+                                    
                                         
-                                    elif e4=="0" and e3== e3%2+(i+0.1):
-                                        sda3=sda3+"1"
-                                        e4="1"
-                                        e4=""
-                                        
-                                            
-                                    elif e4=="1" and e3== e3%1+(i+0.1):
-                                            sda3=sda3+"1"
-                                            e4="0"
-                                            e4=""
-                                        
-                                    elif e4=="0" and e3== e3%1+(i+0.1):
-                                        sda3=sda3+"0"
-                                        e4="1"
-                                        e4=""
-
-                                    elif e4=="1":
-                                            sda3=sda3+"1"
-                                            e4="0"
-                                            e4=""
-                                        
-                                    elif e4=="0":
-                                        sda3=sda3+"0"
-                                        e4="1"
-                                        e4=""
-                                    if i==400:
-                                        i=1
+                                if e4=="1":
+                                	sda3=sda3+"0"
+                                	e4="0"
+                                	e4=""
+                                    
+                                if e4=="0":
+                                    sda3=sda3+"1"
+                                    e4="1"
+                                    e4=""     
 	                                                  
                                 e2=e2+1
                                 e3=e3+1
@@ -1409,41 +1396,27 @@ class compression:
                                 e4=sda2[e2:e3]
                                 
                                 block=block+1
-                           
-                                for i in range(1, 400):
                                 
-                                    if e4=="1" and e3== e3%2+(i+0.1):
-                                            sda3=sda3+"0"
-                                            e4="0"
-                                            e4=""
+                                if e4=="1" and e3== e3%3:
+                                	sda3=sda3+"0"
+                                	e4="0"
+                                	e4=""
+                                    
+                                if e4=="0" and e3== e3%2:
+                                    sda3=sda3+"1"
+                                    e4="1"
+                                    e4=""
+                                    
                                         
-                                    elif e4=="0" and e3== e3%2+(i+0.1):
-                                        sda3=sda3+"1"
-                                        e4="1"
-                                        e4=""
-                                        
-                                            
-                                    elif e4=="1" and e3== e3%1+(i+0.1):
-                                            sda3=sda3+"1"
-                                            e4="0"
-                                            e4=""
-                                        
-                                    elif e4=="0" and e3== e3%1+(i+0.1):
-                                        sda3=sda3+"0"
-                                        e4="1"
-                                        e4=""
-
-                                    elif e4=="1":
-                                            sda3=sda3+"1"
-                                            e4="0"
-                                            e4=""
-                                        
-                                    elif e4=="0":
-                                        sda3=sda3+"0"
-                                        e4="1"
-                                        e4=""
-                                    if i==400:
-                                        i=1
+                                if e4=="1":
+                                	sda3=sda3+"0"
+                                	e4="0"
+                                	e4=""
+                                    
+                                if e4=="0":
+                                    sda3=sda3+"1"
+                                    e4="1"
+                                    e4=""     
 	                                         
                                     
                                 e2=e2+1
