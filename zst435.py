@@ -3073,19 +3073,10 @@ class compression:
                                 e4=sda2[e2:e3]
                                 
                                 block=block+1
+   
                                 if assxw==e3%2 or assxw==e3%10:
-                                            if e4=="0":
-                                                sda3=sda3+"0"
-                                                e4="0"
-                                                e4=""  
-                                       
-                                      
-                                            if e4=="1":
-                                                sda3=sda3+"1"
-                                                e4="1"
-                                                e4=""   
                                                
-                                            elif e4=="1" and e3== e3%10:
+                                            if e4=="1" and e3== e3%10:
                                                     sda3=sda3+"0"
                                                     e4="0"
                                                     e4=""
@@ -3101,16 +3092,7 @@ class compression:
                                                     e4="0"
                                                     e4=""
                                                 
-                                            elif e4=="0":
-                                                sda3=sda3+"1"
-                                                e4="1"
-                                                e4=""
-                                                    
-                                                    
-                                            if e4=="0":
-                                                sda3=sda3+"0"
-                                                e4="0"
-                                                e4="" 
+                                         
                                             elif e4=="1":
                                                 sda3=sda3+"1"
                                                 e4="1"
@@ -3127,16 +3109,7 @@ class compression:
                                                 e4=""
                                                 
                                                     
-                                            elif e4=="1":
-                                                    sda3=sda3+"0"
-                                                    e4="0"
-                                                    e4=""
-                                                
-                                            elif e4=="0":
-                                                sda3=sda3+"1"
-                                                e4="1"
-                                                e4=""
-                                    
+                         
                                     
                                     
                                             elif e4=="0" and e3== e3%9:
@@ -3162,14 +3135,9 @@ class compression:
                                                     
                                                     
                                                     
-                                            elif e4=="0":
-                                                sda3=sda3+"0"
-                                                e4="0"
-                                                e4="" 
-                                            elif e4=="1":
-                                                sda3=sda3+"1"
-                                                e4="1"
-                                                e4=""   
+                                        
+                                            
+                                
                                 
                                 if e4=="1" and e3== e3%9+assxw:
                                 	sda3=sda3+"0"
@@ -3221,7 +3189,65 @@ class compression:
                                 elif e4=="0":
                                     sda3=sda3+"1"
                                     e4="1"
-                                    e4=""                                
+                                    e4=""  
+                                if assxw>=e3%2:
+	                                if e4=="1" and e3== e3%19+assxw:
+	                                	sda3=sda3+"0"
+	                                	e4="0"
+	                                	e4=""
+	                                    
+	                                elif e4=="0" and e3== e3%18+assxw:
+	                                    sda3=sda3+"1"
+	                                    e4="1"
+	                                    e4=""
+	                                    
+	                                elif e4=="0" and e3== e3%18+assxw:
+	                                    sda3=sda3+"1"
+	                                    e4="1"
+	                                    e4=""
+	                                
+	                                
+	                                elif e4=="1" and e3== e3%1+assxw:
+	                                	sda3=sda3+"1"
+	                                	e4="1"
+	                                	e4=""
+	                                    
+	                                elif e4=="0" and e3== e3%2+assxw:
+	                                    sda3=sda3+"0"
+	                                    e4="0"
+	                                    e4=""  
+	                                elif e4=="0" and e3== e3%9:
+                                                    sda3=sda3+"1"
+                                                    e4="1"
+                                                    e4=""
+                                    
+	                                    
+	                                if e4=="0" and e3== e3%4+assxw:
+	                                    sda3=sda3+"0"
+	                                    e4="0"
+	                                    e4=""  
+	                                    
+	                                   	
+	                                if e4=="1" and e3== e3%6+assxw:
+	                                    sda3=sda3+"0"
+	                                    e4="0"
+	                                    e4=""  
+                               
+                                    
+	                                if e4=="1" and e3== e3%2+assxw:
+	                                	sda3=sda3+"0"
+	                                	e4="1"
+	                                	e4=""
+	                                    
+	                                if e4=="0" and e3== e3%3+assxw:
+	                                    sda3=sda3+"1"
+	                                    e4="0"
+	                                    e4=""  
+	                                              
+	                                if e4=="0" and e3== e3%5+assxw:
+	                                	sda3=sda3+"0"
+	                                	e4="1"
+	                                	e4=""                                                
  
                              
                                 e2=e2+1
@@ -3415,18 +3441,8 @@ class compression:
                                 block=block+1 
                                 
                                 if assxw==e3%2 or assxw==e3%10:
-                                            if e4=="0":
-                                                sda3=sda3+"0"
-                                                e4="0"
-                                                e4=""  
-                                       
-                                      
-                                            if e4=="1":
-                                                sda3=sda3+"1"
-                                                e4="1"
-                                                e4=""   
                                                
-                                            elif e4=="1" and e3== e3%10:
+                                            if e4=="1" and e3== e3%10:
                                                     sda3=sda3+"0"
                                                     e4="0"
                                                     e4=""
@@ -3442,16 +3458,7 @@ class compression:
                                                     e4="0"
                                                     e4=""
                                                 
-                                            elif e4=="0":
-                                                sda3=sda3+"1"
-                                                e4="1"
-                                                e4=""
-                                                    
-                                                    
-                                            if e4=="0":
-                                                sda3=sda3+"0"
-                                                e4="0"
-                                                e4="" 
+                                         
                                             elif e4=="1":
                                                 sda3=sda3+"1"
                                                 e4="1"
@@ -3468,16 +3475,7 @@ class compression:
                                                 e4=""
                                                 
                                                     
-                                            elif e4=="1":
-                                                    sda3=sda3+"0"
-                                                    e4="0"
-                                                    e4=""
-                                                
-                                            elif e4=="0":
-                                                sda3=sda3+"1"
-                                                e4="1"
-                                                e4=""
-                                    
+                         
                                     
                                     
                                             elif e4=="0" and e3== e3%9:
@@ -3503,14 +3501,9 @@ class compression:
                                                     
                                                     
                                                     
-                                            elif e4=="0":
-                                                sda3=sda3+"0"
-                                                e4="0"
-                                                e4="" 
-                                            elif e4=="1":
-                                                sda3=sda3+"1"
-                                                e4="1"
-                                                e4=""   
+                                        
+                                            
+                                
                                 
                                 if e4=="1" and e3== e3%9+assxw:
                                 	sda3=sda3+"0"
@@ -3562,7 +3555,66 @@ class compression:
                                 elif e4=="0":
                                     sda3=sda3+"1"
                                     e4="1"
-                                    e4=""                                
+                                    e4=""  
+                                if assxw>=e3%2:
+	                                if e4=="1" and e3== e3%19+assxw:
+	                                	sda3=sda3+"0"
+	                                	e4="0"
+	                                	e4=""
+	                                    
+	                                elif e4=="0" and e3== e3%18+assxw:
+	                                    sda3=sda3+"1"
+	                                    e4="1"
+	                                    e4=""
+	                                    
+	                                elif e4=="0" and e3== e3%18+assxw:
+	                                    sda3=sda3+"1"
+	                                    e4="1"
+	                                    e4=""
+	                                
+	                                
+	                                elif e4=="1" and e3== e3%1+assxw:
+	                                	sda3=sda3+"1"
+	                                	e4="1"
+	                                	e4=""
+	                                    
+	                                elif e4=="0" and e3== e3%2+assxw:
+	                                    sda3=sda3+"0"
+	                                    e4="0"
+	                                    e4=""  
+	                                elif e4=="0" and e3== e3%9:
+                                                    sda3=sda3+"1"
+                                                    e4="1"
+                                                    e4=""
+                                    
+	                                    
+	                                if e4=="0" and e3== e3%4+assxw:
+	                                    sda3=sda3+"0"
+	                                    e4="0"
+	                                    e4=""  
+	                                    
+	                                   	
+	                                if e4=="1" and e3== e3%6+assxw:
+	                                    sda3=sda3+"0"
+	                                    e4="0"
+	                                    e4=""  
+                               
+                                    
+	                                if e4=="1" and e3== e3%2+assxw:
+	                                	sda3=sda3+"0"
+	                                	e4="1"
+	                                	e4=""
+	                                    
+	                                if e4=="0" and e3== e3%3+assxw:
+	                                    sda3=sda3+"1"
+	                                    e4="0"
+	                                    e4=""  
+	                                              
+	                                if e4=="0" and e3== e3%5+assxw:
+	                                	sda3=sda3+"0"
+	                                	e4="1"
+	                                	e4=""     
+                                   
  
 	                                                  
                                 e2=e2+1
