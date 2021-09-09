@@ -2,7 +2,7 @@
 
 https://youtu.be/Ne82lgXQPFY
 
-Speed: Ultra 100B-1KB
+Speed: Ultra 100B-1KB/s
 
 Instruction:
 1. Need python 
