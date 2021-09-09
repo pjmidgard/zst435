@@ -2,7 +2,7 @@
 
 https://youtu.be/Ne82lgXQPFY
 
-Speed: Area 100B-1KB Absolute 2KB Ultra 2MB-10MB Max 8GB-80GB/s
+Speed: Area 100B-1KB
 
 Instruction:
 1. Need python 
