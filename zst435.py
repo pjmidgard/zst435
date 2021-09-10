@@ -878,6 +878,7 @@ class compression:
 
                                     import zstandard
                                     data=zstandard.compress(data)
+                                    data=data[4:]
                                     sda=bin(int(binascii.hexlify(data),16))[2:]
                                     lenf=len(sda)
                                     lenf1=len(data)
@@ -1417,7 +1418,7 @@ class compression:
                                         assx=10
                                         if assx==10:
                                         	
-                                        	jl=jl[4:]
+                                        	
                                         	f2.write(jl)
                                         	x2 = time()
                                         	x3=x2-x
