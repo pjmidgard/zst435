@@ -1500,7 +1500,7 @@ class compression:
                             
                             countraz=countraz+1
 
-                            with open("data.bin", "ab") as f2:
+                            with open(nameas, "ab") as f2:
                                 if countraz==1:
                                     sda=bin(int(binascii.hexlify(data),16))[2:]
                                     lenf=len(sda)
