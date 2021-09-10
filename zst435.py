@@ -859,7 +859,7 @@ class compression:
                             
                             countraz=countraz+1
 
-                            with open("data.bin", "ab") as f2:
+                            with open(nameas, "ab") as f2:
                                 if countraz==1:
 
                                     import zstandard
