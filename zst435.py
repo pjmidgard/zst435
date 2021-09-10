@@ -433,7 +433,7 @@ class compression:
                                     
                       
                                     assx=10
-                                    
+                                   
                                     f2.write(jl)
                                     x2 = time()
                                     x3 = x2-x
@@ -840,21 +840,7 @@ class compression:
 
                        # Read the whole file at once
                         data = binary_file.read()
-                        if Portal==9 and data[0:3]!=b'\xff\xd8\xff':
-                        	print("Program close because this is file incorrect")
-                        	raise SystemExit
-                        if Portal==9 and data[0:3]==b'\xff\xd8\xff': 
-                        	data=data[3:]
-                        if Portal==7 and data[0:4]!=b'\x89\x50\x4e\x47' :
-                        	print("Program close because this is file incorrect")
-                        	raise SystemExit
-                        if Portal==7 and data[0:4]==b'\x89\x50\x4e\x47' :             
-                        	data=data[4:]
-                        if Portal==8 and data[0:11]!=b'\x00\x00\x00\x18\x66\x74\x79\x70\x6d\x70\x34':
-                        	print("Program close because this is file incorrect")
-                        	raise SystemExit
-                        if Portal==8 and data[0:11]==b'\x00\x00\x00\x18\x66\x74\x79\x70\x6d\x70\x34':             
-                        	data=data[11:]
+                       
   
                         s=str(data)
                        
@@ -873,7 +859,7 @@ class compression:
                             
                             countraz=countraz+1
 
-                            with open(nameas, "ab") as f2:
+                            with open("data.bin", "ab") as f2:
                                 if countraz==1:
 
                                     import zstandard
@@ -1419,6 +1405,7 @@ class compression:
                                         if assx==10:
                                         	
                                         	
+                                        	
                                         	f2.write(jl)
                                         	x2 = time()
                                         	x3=x2-x
@@ -1513,7 +1500,7 @@ class compression:
                             
                             countraz=countraz+1
 
-                            with open(nameas, "ab") as f2:
+                            with open("data.bin", "ab") as f2:
                                 if countraz==1:
                                     sda=bin(int(binascii.hexlify(data),16))[2:]
                                     lenf=len(sda)
@@ -2043,12 +2030,8 @@ class compression:
                                     jl=binascii.unhexlify(qqwslenf % n)
                                     sssssw=len(jl)
                                     data=jl
-                                    if Portal==7:
-                                        jl= b'\x89\x50\x4e\x47'+jl
-                                    if Portal==8:
-                                    	                    jl=b'\x00\x00\x00\x18\x66\x74\x79\x70\x6d\x70\x34'+jl
-                                    if Portal==9:
-                                    	                    																		jl=b'\xff\xd8\xff'+jl
+                                   
+                                    	                    												   
                                     qqqwz=qqqwz+1
                                     szxzzza=""
                                     szxzs=""
@@ -2057,7 +2040,7 @@ class compression:
                                     if assxw==200:
                                         assx=10
                                         if assx==10:
-                                        	
+                                            
                                             f2.write(jl)
                                             x2 = time()
                                             x3=x2-x
