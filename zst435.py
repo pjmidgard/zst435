@@ -1417,12 +1417,15 @@ class compression:
                                     if assxw==200:
                                         assx=10
                                         if assx==10:
-                                        	
-                                        	
-                                        	f2.write(jl)
-                                        	x2 = time()
-                                        	x3=x2-x
-                                        	return print(x3)
+                                            if jl[0:1]!=b'\x60':
+                                                print("Program close because this is file incorrect")
+                                                raise SystemExit
+                                            if jl[0:1]==b'\x60':
+                                                jl=jl[1:]
+                                                f2.write(jl)
+                                                x2 = time()
+                                                x3=x2-x
+                                                return print(x3)
 
     def cryptograpy_unpack(self):                      
                  if namez=="cl":
@@ -1491,7 +1494,7 @@ class compression:
                        # Read the whole file at once
                         data = binary_file.read()
 
-                        data = b'\x28\xb5\x2f\xfd'+data	
+                        data = b'\x28\xb5\x2f\xfd\x60'+data	
                         import zstandard
                         data=zstandard.decompress(data)
                 
