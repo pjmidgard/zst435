@@ -876,9 +876,7 @@ class compression:
                             with open(nameas, "ab") as f2:
                                 if countraz==1:
 
-                                    import zstandard
-                                    data=zstandard.compress(data)
-                                    data=data[4:]
+                                 
                                     sda=bin(int(binascii.hexlify(data),16))[2:]
                                     lenf=len(sda)
                                     lenf1=len(data)
@@ -1417,11 +1415,10 @@ class compression:
                                     if assxw==200:
                                         assx=10
                                         if assx==10:
-                                            if jl[0:1]!=b'\x60':
-                                                print("Program close because this is file incorrect")
-                                                raise SystemExit
-                                            if jl[0:1]==b'\x60':
-                                                jl=jl[1:]
+                                                import zstandard
+                                                jl=zstandard.compress(jl)
+                                                jl=jl[5:]
+                                               
                                                 f2.write(jl)
                                                 x2 = time()
                                                 x3=x2-x
