@@ -1417,7 +1417,7 @@ class compression:
                                         if assx==10:
                                                 import zstandard
                                                 jl=zstandard.compress(jl)
-                                                jl=jl[5:]
+                                                jl=jl[4:]
                                                
                                                 f2.write(jl)
                                                 x2 = time()
@@ -1491,7 +1491,7 @@ class compression:
                        # Read the whole file at once
                         data = binary_file.read()
 
-                        data = b'\x28\xb5\x2f\xfd\x60'+data	
+                        data = b'\x28\xb5\x2f\xfd'+data	
                         import zstandard
                         data=zstandard.decompress(data)
                 
